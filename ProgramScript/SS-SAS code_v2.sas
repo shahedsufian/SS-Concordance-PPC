@@ -1,5 +1,5 @@
 /* Define the library reference path within "" for the data sets */
-libname pldf v8 "C:\Users\3074382\Downloads\Data sets";
+libname pldf v8 "";
 
 /* Define the filename for the data set and insert the file path of the data set within ''. 
 h217 is for MEPS Panel 23 Longitudinal Data File and so on*/
@@ -7,7 +7,7 @@ h217 is for MEPS Panel 23 Longitudinal Data File and so on*/
 %macro import_files;
     %do i = 1 %to 5;
         %let file = %scan(&files, &i);
-        filename pldf&i "C:\Users\3074382\Downloads\Data sets\&file..ssp";
+        filename pldf&i "\&file..ssp";
         %if &i = 1 or &i = 2 %then %do;
             proc cimport file=pldf&i lib=pldf compress=char;
             run;
