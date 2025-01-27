@@ -19,7 +19,7 @@ Providers must be culturally sensitive when seeing patients of different races a
 
 ## Usage
 To run the code, you will need SAS installed on your machine. Follow the steps below:
-1. Clone the repository: `git clone https://github.com/yourusername/SS-Concordance-PPC.git`
+1. Clone the repository: `git clone https://github.com/yourusername/SS-Racial-Concordance-and-Patient-Provider-Communication.git`
 2. Navigate to the `ProgramScript` folder and open the SAS code file.
 3. Run the code in SAS after collecting the required datasets.
 
