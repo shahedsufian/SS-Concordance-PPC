@@ -2,7 +2,8 @@
 libname pldf v8 "";
 
 /* Define the filename for the data set and insert the file path of the data set within ''. 
-h217 is for MEPS Panel 23 Longitudinal Data File and so on*/
+h217, h210, h202, h193, and h183 represent MEPS Panel 23, 22, 21, 20, and 19 Longitudinal 
+Data Files respectively*/
 %let files = h217 h210 h202 h193 h183;
 %macro import_files;
     %do i = 1 %to 5;
